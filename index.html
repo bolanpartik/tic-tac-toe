@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./dist/style.css">
 </head>
-<body>
-    <header>
-        <p>Tic Tac Toe</p>
+<body class="flex flex-col items-center h-screen w-screen bg-rose-300  m-0 p-0 select-none box-border">
+    <header >
+        <p class="text-2xl mt-4 p-2 px-4 rounded-2xl shadow-xl bg-gradient-to-r from-teal-400 to-yellow-200">Tic Tac Toe</p>
     </header>
-    <main>
-        <div>
+    <main class="mt-5 flex items-center flex-col">
+        <div class="w-full h-auto grid grid-cols-3 gap-1 text-center text-3xl leading-loose ">
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
@@ -20,13 +21,13 @@
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
+        </div>        
+        
+        <div class="rounded py-2 px-4 mt-4 w-max shadow-lg bg-indigo-800 text-lg text-emerald-200" id="msg-container">
+            <p id="message-box">Turn : Player X </p>
         </div>
-
-        <div id="msg-container">
-            <p id="message-box"></p>
-        </div>
-
-        <button id="reset-game">Reset</button>
+            <button id="reset-game" class="border-none outline-none bg-green-200 py-1 px-2 mt-4 rounded-xl text-lg hover:bg-blue-400 hover:shadow-xl">Reset Game</button>
     </main>
+    
 </body>
 </html>
